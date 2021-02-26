@@ -31,4 +31,9 @@ public class ButtonManagement : MonoBehaviour
     {
         SceneManager.LoadScene("HardScene");
     }
+
+    public void BackMain()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
 }

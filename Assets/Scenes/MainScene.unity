@@ -319,6 +319,7 @@ GameObject:
   - component: {fileID: 448878204}
   - component: {fileID: 448878203}
   - component: {fileID: 448878202}
+  - component: {fileID: 448878205}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -389,7 +390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 448878203}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 577808237}
+        m_TargetAssemblyTypeName: ButtonManagement, Assembly-CSharp
+        m_MethodName: GoHardScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &448878203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +441,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448878200}
   m_CullTransparentMesh: 1
+--- !u!114 &448878205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448878200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &486885658
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,6 +738,7 @@ GameObject:
   - component: {fileID: 992969359}
   - component: {fileID: 992969358}
   - component: {fileID: 992969357}
+  - component: {fileID: 992969360}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -831,6 +860,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992969355}
   m_CullTransparentMesh: 1
+--- !u!114 &992969360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992969355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1037004565
 GameObject:
   m_ObjectHideFlags: 0
@@ -927,6 +971,7 @@ GameObject:
   - component: {fileID: 1532621004}
   - component: {fileID: 1532621003}
   - component: {fileID: 1532621002}
+  - component: {fileID: 1532621001}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -954,6 +999,21 @@ RectTransform:
   m_AnchoredPosition: {x: -286.44, y: -20.723}
   m_SizeDelta: {x: 221.046, y: 41.4461}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1532621001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532620999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &1532621002
 MonoBehaviour:
   m_ObjectHideFlags: 0
