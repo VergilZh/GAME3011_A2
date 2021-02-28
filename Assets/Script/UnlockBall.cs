@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UnlockBall : MonoBehaviour
 {
+    public CountDown PlayerWin;
+    public GameObject WinScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class UnlockBall : MonoBehaviour
         if (collision.gameObject.tag == "Finish")
         {
             Debug.Log("Unlocked");
+            PlayerWin.isGameOver = true;
+            WinScene.SetActive(true);
         }
     }
 }

@@ -10,6 +10,7 @@ public class CountDown : MonoBehaviour
     public AudioSource DIO;
     public GameObject EndScene;
     public bool Skill;
+    public bool isGameOver;
     public float SkillTime;
 
     // Start is called before the first frame update
@@ -18,6 +19,7 @@ public class CountDown : MonoBehaviour
         slider.value = slider.maxValue;
         EndScene.SetActive(false);
         Skill = false;
+        isGameOver = false;
         SkillTime = 5;
     }
 
@@ -38,7 +40,7 @@ public class CountDown : MonoBehaviour
         { 
             slider.value -= 1 * Time.deltaTime;
         }
-        else if (slider.value <= 0)
+        else if (slider.value <= 0 && isGameOver != true)
         {
             if (!Ball.isPlaying)
             { 
