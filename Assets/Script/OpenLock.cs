@@ -15,7 +15,7 @@ public class OpenLock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey("left"))
         {
             transform.Rotate(0, 0, Speed);
             if (!OpenAudio.isPlaying)
@@ -23,7 +23,7 @@ public class OpenLock : MonoBehaviour
                 OpenAudio.Play();
             }
         }
-        else if (Input.GetKey("d"))
+        else if (Input.GetKey("d") || Input.GetKey("right"))
         {
             transform.Rotate(0, 0, -Speed);
             if (!OpenAudio.isPlaying)
